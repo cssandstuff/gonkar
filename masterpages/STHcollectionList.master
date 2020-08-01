@@ -1,0 +1,9 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/RunwayMaster.master" AutoEventWireup="true" %>
+<asp:Content ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+
+<div id="content">
+	<umbraco:Item runat="server" field="bodyText" />
+	<umbraco:Macro Alias="STHcollection" runat="server"></umbraco:Macro>
+</div>
+
+</asp:Content>

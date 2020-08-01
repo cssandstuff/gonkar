@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="head" >
+	<asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				
+		<!-- Meta Data -->
+    		<meta name="description" content="<umbraco:Item field='metaDescription' recursive='true' runat='server'></umbraco:Item>" />
+    		<meta name="keywords" content="<umbraco:Item field='metaKeywords' runat='server'></umbraco:Item>" />
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/gkr.css" /> 
+
+     <!-- Jquery Inner Fade -->
+		<script type="text/javascript" src="scripts/js/jquery.min.js"></script> 
+		<script type="text/javascript" src="scripts/js/jquery.innerfade.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(
+				function(){
+
+					//$("ul#home_images").removeClass();
+					$('ul#home_images').innerfade({
+						speed: 1200,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '333px'
+					});
+					
+
+			});
+		</script>
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-7167547-2");
+		pageTracker._trackPageview();
+		} catch(err) {}
+
+   
+		</script>
+
+	</head>
+<body>
+<div id="container">
+	<div id="content_main">
+		<h2 id="logo"><a href="/" title="Gonkar Gyatso"><span></span>Gonkar Gyatso, Contemporary Tibetan Artist</a></h2>
+		<!-- <div id="language_select"><h6>choose language:</h6><ul><li id="New slide"><a href="/new-slide"><span> </span></a></li><li id="Chinese"><a href="/chinese"><span> </span>Chinese (中国)</a></li><li id="Japanese"><a href="/japanese"><span> </span>Japanese (日本語)</a></li><li id="English" class="selected"><a href="/english"><span> </span>English</a></li></ul></div> 
+		<ul id="nav_main"><li><a href="/about-the-artist">About the Artist</a></li><li><a href="/exhibition">Exhibition</a></li><li><a href="/studio">Studio</a></li><li><a href="/news-and-press">News and Press</a></li><li><a href="/contact">Contact</a></li></ul> -->
+
+		<form method="post" action="/" id="RunwayMasterForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkoNReUENaUDZt8r7ARN/R44QWfIrMw7F/wtKD8dX9h6A=">
+</div>
+
+			
+	<div id="content_home" class="clearfix">
+
+	<ul id="home_images" class="hidden innerfade" style="position: relative; height: 333px;">
+    <li style="z-index: 4; position: absolute; display: list-item;"><img src="media/7186/94023462@88260377.743ad05a.jpg.jpg" alt="Recent work from Gonkar Gyasto"></li>
+    <li style="z-index: 7; position: absolute; display: none;"><img src="media/757/img_3037.jpg" alt="Tibetan Artwork on the wall"></li>
+    <li style="z-index: 6; position: absolute; display: none;"><img src="media/1946/img_3000.jpg" alt="a perspective on Gonkars Work"></li>
+    <li style="z-index: 5; position: absolute; display: none;"><img src="media/753/img_3045.jpg" alt="lying buddha"></li>
+    <li style="z-index: 3; position: absolute; display: none;"><img src="media/755/img_2979.jpg" alt="another wall perpective"></li>
+    <li style="z-index: 2; position: absolute; display: none;"><img src="media/7192/f7610102@f0f01654.ca3fd05a.jpg.jpg" alt="1020 Prayers "></li>
+    <li style="z-index: 1; position: absolute; display: none;"><img src="media/2014/img_3038.jpg" alt="text"></li>
+	</ul>
+	<!-- <div id="site_label">
+		<h1>Gonkar Gyatso</h1>
+		<h3>Contemporary Tibetan Artist</h3>
+	</div> -->
+
+	<h2>Gonkar Gyatso is a contemporary artist, born in Tibet and living for over a decade in the West. He is the founder of Contemporary Tibetan Art gallery the Sweet Tea House in London.</h2>
+	</div>
+
+		
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div></form>
+	</div>
+<ul id="site_info">
+<li class="left">© 2020 | Gonkar Gyatso</li>
+<!-- <li class="right">&nbsp;<a href="/sitemap.aspx">Sitemap</a></li> -->
+
+</ul>
+</div>
+</body>
+</html>

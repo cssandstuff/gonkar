@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/RunwayMaster.master" AutoEventWireup="true" %>
+<asp:Content id="HeadHomepagecontent" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+		<!-- Jquery Inner Fade -->
+		<script type="text/javascript" src="/Scripts/js/jquery.js"></script>
+		<script type="text/javascript" src="/Scripts/js/jquery.innerfade.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(
+				function(){
+
+					//$("ul#home_images").removeClass();
+					$('ul#home_images').innerfade({
+						speed: 1200,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '333px'
+					});
+					
+
+			});
+		</script>
+</asp:Content>
+<asp:Content id="RunwayHomepagecontent" ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+	<div id="content_home" class="clearfix">
+
+	<ul id="home_images" class="hidden">
+	<umbraco:Macro Alias="SlideshowImages" runat="server"></umbraco:Macro>
+	</ul>
+	<div id="site_label">
+		<h1>the Sweet Tea House</h1>
+		<h3>Contemporary Tibetan Art Gallery</h3>
+	</div>
+
+	<h2><umbraco:Item field="siteDescription" runat="server"></umbraco:Item></h2>
+	</div>
+</asp:Content>

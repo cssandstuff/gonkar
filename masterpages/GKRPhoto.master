@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/GKRMaster.master" AutoEventWireup="true" %>
+
+<asp:content ContentPlaceHolderId="HeadContentPlaceHolder" runat="server">
+	<title><umbraco:Item field="metaTitle" useIfEmpty="pageName" recursive="false" runat="server"></umbraco:Item> | <umbraco:Item runat="server" field="siteName" recursive="true" /></title>
+</asp:content>
+
+<asp:content ContentPlaceHolderId="RunwayMasterContentPlaceHolder" runat="server">
+<div id="content">
+       <img src="/umbraco/ImageGen.ashx?image=<umbraco:Item field='SSimgSrc' runat='server'></umbraco:Item>&amp;width=540&amp;format=jpeg" alt="<umbraco:Item useIfEmpty='altText' runat='server'></umbraco:Item>" />
+</div>
+</asp:content>

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/RunwayMaster.master" AutoEventWireup="true" %>
+<asp:Content id="HeadHomepagecontent" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+<!-- Jquery -->
+<script type="text/javascript" src="/Scripts/js/jquery.js"></script>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+<ul id="nav_sub">
+<umbraco:Macro Alias="SubNavigation" runat="server"></umbraco:Macro>
+</ul>
+<div id="content">
+    	<!-- <div id="contentHeader">	
+        	<h1><umbraco:Item runat="server" field="pageName"/></h1>
+    	</div> -->
+
+	<umbraco:Item runat="server" field="bodyText" />
+<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAkCJ2zNJRwVVSU7MoRCh3lhQeWEOioekNodqPDFqfU9be0_TBrBT3dLNLzxtiZA-btGYBfn0WGO_1NQ" type="text/javascript"></script>
+
+<div id="map">
+
+<script type="text/javascript">
+//<![CDATA[
+
+var map;
+var point = new GLatLng(<umbraco:Item field="fyMap" runat="server"></umbraco:Item>);
+var html = "The Sweet Tea House<br/>Contemporary Tibetan Art Gallery";
+var markers = [];
+var marker = new GMarker(point);  
+
+$(document).ready(function() {
+
+if (GBrowserIsCompatible()) {
+// Initialize the map.
+
+map = new GMap2(document.getElementById("map"));
+map.addControl(new GLargeMapControl());
+map.setCenter(new GLatLng(<umbraco:Item field="fyMap" runat="server"></umbraco:Item>), 17);
+GEvent.addListener(marker, "mouseover", function() {
+marker.openInfoWindowHtml(html);
+});
+map.addOverlay(marker);
+}
+});
+//]]>
+
+
+$(document.body).unload(function() {
+if (GBrowserIsCompatible()) {
+GUnload();
+}
+});
+</script>
+
+</div>
+
+</div>
+
+
+
+</asp:Content>

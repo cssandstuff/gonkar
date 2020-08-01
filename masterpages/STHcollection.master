@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/RunwayMaster.master" AutoEventWireup="true" %>
+<asp:Content id="HeadHomepagecontent" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+		<!-- Jquery Inner Fade -->
+		<script type="text/javascript" src="/Scripts/js/jquery.js"></script>
+		<script type="text/javascript" src="/Scripts/js/jquery.innerfade.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(
+				function(){
+
+					$('ul#print_sets').innerfade({
+						speed: 1200,
+						timeout: 5000,
+						type: 'sequence',
+						containerheight: '333px'
+					});
+					
+
+			});
+		</script>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+<ul id="nav_collection">
+<li class="none"><h2>More Prints:</h2></li>
+<umbraco:Macro Alias="SubNavigation" runat="server"></umbraco:Macro>
+</ul>
+<div id="content">
+	<umbraco:Macro Alias="STH_collection_details" runat="server"></umbraco:Macro>
+	<p class="fixwidth"><umbraco:Item runat="server" field="bodyText" /></p>
+
+</div>
+
+
+
+</asp:Content>

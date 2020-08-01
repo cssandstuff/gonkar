@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/RunwayMaster.master" AutoEventWireup="true" %>
+<asp:Content ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+<ul id="nav_sub">
+<umbraco:Macro Alias="SubNavigation" runat="server"></umbraco:Macro>
+</ul>
+<div id="content">
+        <umbraco:Macro Alias="STH_mainTitle" runat="server"></umbraco:Macro>
+	<umbraco:Item runat="server" field="bodyText" />
+</div>
+
+
+
+</asp:Content>

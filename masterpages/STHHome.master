@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<%@ Master Language="C#" MasterPageFile="/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head id="head">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title><asp:placeholder runat="server"><umbraco:Item runat="server" field="pageName" /> - <umbraco:Item runat="server" field="siteName" recursive="true" /></asp:placeholder></title>
+		
+		<!-- Meta Data -->
+    		<meta name="description" content="<umbraco:Item field='metaDescription' recursive='true' runat='server'></umbraco:Item>" />
+    		<meta name="keywords" content="<umbraco:Item field='metaKeywords' runat='server'></umbraco:Item>" />
+
+		<link rel="stylesheet" type="text/css" href="/css/reset.css" /> 
+		<link rel="stylesheet" type="text/css" href="/css/sth.css" /> 
+		
+</head>
+<body>	
+<div id="container">
+	<div id="content_main" class="home"><h1 id="logo"><a href="/"><span></span>The Sweet Tea House</a></h1>
+
+
+	<div id="content_image">
+		<img class="home_image" src="<umbraco:Item field='mainImage' textIfEmpty='Tibetan Art Gallery the Sweet Tea House' recursive='true' runat='server'></umbraco:Item>" alt="<umbraco:Item field='siteName' runat='server'></umbraco:Item>" />
+		<umbraco:Macro Alias="RunwayTopNavigation" runat="server" />
+		<umbraco:Macro Alias="Language" runat="server" />
+	</div>
+	<h2><umbraco:Item field="siteDescription" runat="server"></umbraco:Item></h2>
+	<form id="RunwayMasterForm" runat="server">
+			<asp:ContentPlaceHolder ID="RunwayMasterContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+	</form>
+	
+	</div>
+
+</div>
+</body>
+</html>
+</asp:Content>
+</asp:Content>

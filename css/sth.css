@@ -1,0 +1,323 @@
+body{font-size:75%;}
+#container{
+	width:750px;
+	margin:auto;
+	margin-top:3%;
+	font-family: "Helvetica Neue", "Helvetica", Arial, Sans-serif;
+	line-height:1.9em;
+}
+
+#content_main{
+    position:relative;
+
+}
+
+
+#atom{width:75%;}
+#atom img{text-align:left !important; margin:0px !important; padding:8px; border:Solid 1px #cfcfcf; }
+#atom a{width:416px; display:block; margin-bottom:12px;}
+#atom em{display:block; color:#999; font-style:italic; margin-top:-8px;}
+#atom div{text-align:left !important;}
+div.blogger-post-footer{display:none;}
+#logo{
+    width:100%;
+    border-bottom: Solid 1px #dfdfdf;
+    height:42px;
+	position:relative;
+	font-size:1em;
+	display:block;
+	margin-bottom:11px;
+	line-height:normal;
+}
+
+
+#logo span{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:url(/media/images/Sweet_tea_house.gif) no-repeat;
+}
+
+#language_select{
+    position:absolute;
+    top:15px;
+    right:0px;
+    margin-right:0px
+}
+
+#content_image{ float:left; width:500px; height:363px; border-bottom: Solid 1px #dfdfdf;}
+img.home_image{}
+
+
+#nav_main{clear:both; height:15px;}
+#nav_main li{ text-transform:lowercase; line-height:normal; float:left; display:block; padding-left:10px; padding-right:10px; padding-top:0px; border-right:1px Solid #ccc;}
+#nav_main li a{display:block; text-decoration:none; color:#333;  height:12px;}
+#nav_main li.Selected a{padding:3px; color:#ccc; background:#333;}
+#nav_main li.Selected a:hover{text-decoration:none;color:#ccc;}
+#nav_main li a:hover{text-decoration:underline; color:#000;}
+
+h6 {float:left; color:#999; padding-top:0px; padding-right:3px; line-height:normal;}
+#language_select ul{float:left;}
+#language_select ul li{float:left; padding:2px; display:block}
+#language_select a{
+	width:18px;
+	height:12px;
+	display:block;
+	position:relative;
+	overflow:hidden;
+	line-height:normal;
+}
+#language_select a span{
+	width:100%;
+	height:100%;
+	position:absolute;
+	display:block;
+}
+
+#English a span{
+	background:url(/media/images/flag_uk.gif) no-repeat;
+}
+
+#Tibetan a span{
+	background:url(/media/images/flag_tibet.gif) no-repeat;
+}
+#Chinese a span{
+	background:url(/media/images/flag_china.gif) no-repeat;
+}
+#Japanese a span{
+	background:url(/media/images/flag_japan.gif) no-repeat;
+}
+
+#English a:hover span, #language_select li.selected#English a span{
+	background:url(/media/images/flag_uk_active.gif) no-repeat;
+}
+#Tibetan a:hover span, #language_select li.selected#Tibetan a span{
+	background:url(/media/images/flag_tibet_active.gif) no-repeat;
+}
+#Chinese a:hover span, #language_select li.selected#Chinese a span{
+	background:url(/media/images/flag_china_active.gif) no-repeat;
+}
+#Japanese a:hover span, #language_select li.selected#Japanese a span{
+	background:url(/media/images/flag_japan_active.gif) no-repeat;
+}
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Styles for our home page                                         */
+
+#content_main.home #logo{
+	margin-bottom:0px;
+}
+
+#content a:link, 
+#content a:active,
+#content a:visited{color:#333; font-weight:bold}
+#content a:hover{ text-decoration:none;}
+#content_home h2, #content_main.home h2{
+	font-size:1.1em;
+	font-weight:normal;
+	float:left;
+	width:200px;
+	padding-left:23px;
+	color:#333;
+	line-height:2em;
+	margin-top:-7px
+}
+#content_main.home #language_select{float:right;}
+#content_main.home #logo{
+	width:234px;
+	border-bottom:none;	
+}
+
+#content{
+    clear:both;
+    padding-top:23px;
+}
+
+#content p{
+	
+	margin-bottom:16px;
+}
+#content p.fixwidth{ width:240px; float:left; padding-right:16px; border-right:Dashed 1px #ccc}
+#content h2, #content h3, #content h4, #content h5, #content h6{
+	font-size:1.25em;
+	margin-bottom:8px;
+	color:#88B32F;
+}
+#content .newsitem h2 a{color:#88B32F; text-decoration:none}
+.newsitem{clear:both; border-bottom:dashed 1px #dfdfdf; min-height: 135px; margin-bottom:14px}
+.newsitem p{float:left; display:block; width:70%;}
+.newsitem a.news_photo{float:left; display:block; padding-right:22px;}
+#content_main.home #language_select{
+    position:inherit;
+    top:auto;
+    right:auto;
+}
+
+#content{}
+#content_home{ padding-top:8px; line-height:normal; height:333px}
+#content_home img.home_image{float:left;}
+
+
+
+#home_images{float:left; width:500px; display:block; padding-bottom:20px; }
+#home_images.hidden li{display:none; !important}
+
+#content h1{
+	font-size:2em;
+	margin-left:-1px;
+}
+
+/* misc styles */
+.clearfix{
+	clear:both;
+}
+
+#site_label{position:absolute; top:360px; left:307px; text-align:right; z-index:999;
+	font-family:Georgia, Times New Roman, Serif; 	
+	width:180px;
+	font-size:0.87em;
+	/*"Chaparral Pro", */
+}
+#site_label h1{background:#333; color:#d1d99b; display:inline; line-height:17px; padding:3px 5px 3px 5px;  }
+#site_label h3{color:#333; display:block; line-height:14px; padding:3px 2px 3px 5px;}
+
+
+#map {
+border:1px solid #000000;
+height:500px;
+width:500px;
+}
+
+#nav_sub{clear:both; padding-top:21px; background:url(/media/images/dotted_fade.gif) no-repeat left bottom; height:23px; }
+#nav_sub li{ background:url(/media/images/bullet.gif) no-repeat left 7px ; text-transform:lowercase; line-height:normal; float:left; display:block; padding:0px 10px 0px 10px; }
+#nav_sub li a{display:block; text-decoration:none; color:#999;  height:12px;}
+#nav_sub li.Selected a{border-bottom:Solid 1px #333;padding-bottom:10px; color:#333}
+#nav_sub li.Selected a:hover{ text-decoration:none; color:#333}
+#nav_sub li a:hover{border-bottom:Solid 1px #333;padding-bottom:10px; color:#333;}
+
+#nav_collection{ position: absolute; right:0px; top:95px;}
+#nav_collection li{ text-align:left; background:url(/media/images/bullet.gif) no-repeat left; padding-left:14px;}
+#nav_collection li.none{ background:none;}
+#nav_collection li a{ color:#333; text-decoration:none;}
+#nav_collection li.Selected a{ text-decoration:underline;}
+#nav_collection li h2{
+	font-size:1.25em;
+	margin-bottom:8px;
+	color:#88B32F;
+}
+#site_info{ line-height:normal; clear:both; color:#999;border-top:Solid 1px #ccc; padding-top:8px; margin-top:20px;}
+#site_info{ line-height:normal; clear:both; color:#999;border-top:Solid 1px #ccc; padding-top:8px; margin-top:20px;}
+#site_info li.left{ float:left; }
+#site_info li.right{ float:right}
+#site_info li a{ color:#999; text-decoration:none;}
+#site_info li a:hover{text-decoration:underline;}
+
+fieldset{ border: Solid 1px #ccc; padding:14px;}
+legend{margin-left:-2px;}
+label{display:block;}
+
+#print_sets{float:left; width:340px; padding-right:24px; }
+#print_sets li{
+	display:block;
+	float:left;
+	width:80px;
+	padding:0px 20px 20px 0px;
+}
+#content #print_sets li h2 a{font-weight:normal; color:#88B32F; text-decoration:none;}
+
+form {line-height:normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+

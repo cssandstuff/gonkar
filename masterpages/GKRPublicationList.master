@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="/masterpages/GKRMaster.master" AutoEventWireup="true" %>
+<asp:Content id="HeadHomepagecontent" ContentPlaceHolderID="HeadContentPlaceHolder" runat="server">
+<title><umbraco:Item field="metaTitle" useIfEmpty="pageName" recursive="false" runat="server"></umbraco:Item> | <umbraco:Item runat="server" field="siteName" recursive="true" /></title>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="RunwayMasterContentPlaceHolder" runat="server">
+<ul id="nav_sub">
+<umbraco:Macro Alias="SubNavigation" runat="server"></umbraco:Macro>
+</ul>
+<div id="content">
+        <umbraco:Macro Alias="STH_mainTitle" runat="server"></umbraco:Macro>
+	<umbraco:Item runat="server" field="bodyText" />
+	<umbraco:Macro Alias="GKR_PublicationList" runat="server"></umbraco:Macro>
+</div>
+
+
+
+</asp:Content>

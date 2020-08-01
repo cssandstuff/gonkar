@@ -1,0 +1,46 @@
+/*  
+    root element for the scrollable.  
+    when scrolling occurs this element stays still.  
+*/ 
+div.scrollable { 
+     
+    /* required settings */ 
+    position:relative; 
+    clear:both;
+    overflow:hidden;          
+    width: 750px;     
+    height:40px;     
+} 
+ 
+/*  
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a super large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+div.scrollable ul.items {     
+    /* this cannot be too large */ 
+    width:20000em;     
+    position:absolute;         
+} 
+ 
+/*  
+    a single item. must be floated on horizontal scrolling 
+    typically this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable ul.items li{ 
+    float:left; 
+} 
+ 
+/* you may want to setup some decorations to active item */ 
+ul.items li.active { 
+    border:1px inset #ccc;         
+    background-color:#fff; 
+}
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
